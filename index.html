@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Showcase</title>
+   <link rel="stylesheet" href="style.css"> 
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container mx-auto py-10 bg-cover bg-center" style="background-image: url('https://media.istockphoto.com/id/1417302736/th/%E0%B9%80%E0%B8%A7%E0%B8%84%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C/%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B5%E0%B8%82%E0%B8%B2%E0%B8%A7%E0%B8%99%E0%B8%B2%E0%B8%A1%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1.jpg?s=612x612&w=0&k=20&c=3lGk_Qiwc5Wx_bSrbc_F2WYjYVuFQBWXBRo85owxsnU=');">
+        <h1 class="text-3xl font-bold text-center text-primary mb-4">TEMPLE BY REGION</h1>
+        <p class="text-center text-muted-foreground mb-8">ค้นหาข้อมูลวัดตามภูมิภาค</p>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div class="relative">
+            <img src="https://img2.pic.in.th/pic/Wat-Phra-That-Pha-Sorn-Kaew-Phetchabun.jpg" alt="Temple Region 1" class="w-full h-full object-cover rounded-lg" />
+            <div id="imagewatthai" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
+              <span class="text-white text-xl font-semibold">ภาคเหนือ</span>
+            </div>
+          </div>
+          <div class="relative">
+            <img src="https://img5.pic.in.th/file/secure-sv1/prapathomjedi.webp" alt="Temple Region 2" class="w-full h-full object-cover rounded-lg" />
+            <div id="imagewatthai" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
+              <span class="text-white text-xl font-semibold">ภาคกลาง</span>
+            </div>
+          </div>
+          <div class="relative">
+            <img src="https://img2.pic.in.th/pic/wattungsedthee.webp" alt="Temple Region 3" class="w-full h-full object-cover rounded-lg" />
+            <div id="imagewatthai" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
+              <span class="text-white text-xl font-semibold">ภาคตะวันออกเฉียงเหนือ</span>
+            </div>
+          </div>
+          <div class="relative">
+            <img src="https://img5.pic.in.th/file/secure-sv1/watthamsue.jpg" alt="Temple Region 4" class="w-full h-full object-cover rounded-lg" />
+            <div id="imagewatthai" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
+              <span class="text-white text-xl font-semibold">ภาคตะวันตก</span>
+            </div>
+             <!-- <div class="relative">
+                <img src="https://img2.pic.in.th/pic/watpaknamkhaemnoo.jpeg" alt="Temple Region 4" class="w-full h-full object-cover rounded-lg" />
+                <div id="imagewatthai" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
+                  <span class="text-white text-xl font-semibold">ภาคตะวันออก</span>
+                </div>
+                <div class="relative">
+                    <img src="https://img5.pic.in.th/file/secure-sv1/3-Wat-Tham-Seua-Krabi-Temples-in-Southern-Thailand.jpg" alt="Temple Region 4" class="w-full h-full object-cover rounded-lg" />
+                    <div id="imagewatthai" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
+                      <span class="text-white text-xl font-semibold">ภาคใต้</span>
+                    </div> -->
+            
+          </div>
+        </div>
+      </div>
+  <!-- <div id="temple" class="templeall">
+    <div id="watthai" class="wat">
+      <img id="imagewatthai" class="imagewatthai2" src="https://img2.pic.in.th/pic/Wat-Phra-That-Pha-Sorn-Kaew-Phetchabun.jpg" alt="ภาคเหนือ">
+    </div>
+    <div id="watthai" class="wat">
+      <img id="imagewatthai" class="imagewatthai2" src="https://img5.pic.in.th/file/secure-sv1/prapathomjedi.webp" alt="ภาคกลาง">
+    </div>
+    <div id="watthai" class="wat">
+      <img id="imagewatthai" class="imagewatthai2" src="https://img2.pic.in.th/pic/wattungsedthee.webp" alt="ภาคตะวันออกเฉียงเหนือ">
+    </div>
+    <div id="watthai" class="wat">
+        <img id="imagewatthai" class="imagewatthai2" src="https://img5.pic.in.th/file/secure-sv1/watthamsue.jpg" alt="ภาคตะวันตก">
+      </div>
+      <div id="watthai" class="wat">
+        <img id="imagewatthai" class="imagewatthai2" src="https://img2.pic.in.th/pic/watpaknamkhaemnoo.jpeg" alt="ภาคตะวันออก">
+      </div>
+      <div id="watthai" class="wat">
+        <img id="imagewatthai" class="imagewatthai2" src="images/3-Wat-Tham-Seua-Krabi-Temples-in-Southern-Thailand.jpg" alt="ภาคใต้">
+  </div> -->
+
+  <!-- <button onclick="toggleAutoplay()">Auto Play</button> -->
+  <script src="script.js"></script>
+</body>
+</html>
